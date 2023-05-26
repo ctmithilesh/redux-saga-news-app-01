@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { getEntNews } from "./reducers/entReducer";
+import Todo from "./Components/Todo";
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
   return (
     <div className="App">
       <h1> I am News </h1>
+      <Todo />
     </div>
   );
 }

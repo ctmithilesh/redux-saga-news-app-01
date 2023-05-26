@@ -10,16 +10,12 @@ export const entReducer = createSlice({
         // action creators 
         getEntNews: (state) => {
             state.isLoading = true
-
         },
         getEntNewsSuccess: (state, action) => {
             state.entertainment = action.payload
         },
-        getEntNewsFailure: (state) => {
-            state.isLoading = false
-        }
     }
 })
-export const { getEntNews, getEntNewsSuccess, getEntNewsFailure } = entReducer.actions;
+export const { getEntNews, getEntNewsSuccess } = entReducer.actions;
 
 export default entReducer.reducer
